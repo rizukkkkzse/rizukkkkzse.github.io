@@ -3,7 +3,7 @@
 		<html>
 				<head>
 					  <meta charset="utf-8">
-					<title>formularz-Strafun </title>
+					<title>Formularz Społeczny </title>
                     <style>
                         :root{
                             --main-color: #b7af71
@@ -15,24 +15,24 @@
 				</head>
 	<body>
 		<center>
-		<a><font color="black" size="6" face="Arial">Formularz</a></font>
+		<P><font color="black" size="6" face="Arial">Formularz</P></font>
 		</center>
         <fieldset>
             <center>
             <div style="background-color: #b7af71"></div>
-            <legend><font size="5" face="Arial">Napisz swoje dane(Imię, Nazwisko, Numer telefonu, e-mail.)</font></legend>
+            <h2><font face="Arial">Napisz swoje dane(Imię, Nazwisko, Numer telefonu, e-mail.)</font></h2>
         </center>
             <form>          
-            Imie: <br>
-            <input type="text" name="Imie" value="Oleksandr">
-            <br>
-            Nazwisko: <br>
-            <input type="text" name="nazwisko" value="Strafun">
-            <br>
-            Numer telefonu: <br>
-            <input type="text" name="numer-telefonu" value="+48 794 776 680">
-            <br>
-            E-mail: <br>
+            Imie: 
+            <input type="text" name="Imie" value="">
+            <br><br>
+            Nazwisko: 
+            <input type="text" name="nazwisko" value="">
+            <br><br>
+            Numer telefonu: 
+            <input type="text" name="numer-telefonu" value="">
+            <br><br>
+            E-mail: 
             <input type="text" name="e-mail" value=""><br>
             <input type="reset" value="Clear form">
             </fieldset>
@@ -41,21 +41,16 @@
             <fieldset>
                 <center>
                 <div style="background-color: #b7af71"></div>
-                <legend><font size="5" face="Arial">Jakie masz zainteresowania lub hobby?</font></legend>
+                <h2><font face="Arial">Jakie masz zainteresowania lub hobby?</font></h2>
             </center>
                 <form>          
-                Gra na komputerze:
-                <input name="gra-na-komputerze" type="checkbox"/>
-                <br>
-                Malowanie:
-                <input name="malowanie" type="checkbox"/>
-                <br>
-                Programowanie:
-                <input name="Programowanie" type="checkbox"/>
-                <br>
-                Inne:
-                <input name="inne" type="checkbox"/>
-                Napisz swoje:
+                <input name="gra-na-komputerze" type="checkbox"/>Gra na komputerze:
+                <br>               
+                <input name="malowanie" type="checkbox"/>Malowanie:
+                <br>               
+                <input name="Programowanie" type="checkbox"/>Programowanie:
+                <br>    
+                <input name="inne" type="checkbox"/>Inne:
                 <input name="napisz-swoje" value="" type="text"><br>
                 <input type="reset" value="Clear form">
                 </fieldset>
@@ -64,7 +59,7 @@
                 <fieldset>
                     <center>
                     <div style="background-color: #b7af71"></div>
-                    <legend><font size="5" face="Arial">Jakie znasz języki programowania?</font></legend>
+                    <h2><font face="Arial">Jakie znasz języki programowania?</font></h2>
                 </center>
                     <form>          
                     Python
@@ -82,19 +77,107 @@
                         <fieldset>
                             <center>
                             <div style="background-color: #b7af71"></div>
-                            <legend><font size="5" face="Arial">Jak się czujesz?</font></legend>
+                            <h2><font face="Arial">Jak się czujesz?</font></h2>
                         </center>
                             <form>          
                                 <input id="dobrze" name="dobrzeczuje" type="radio" value="1" />
                                 <label for="dobrze">Dobrze</label><br />
-                                <input id="zle" name="zleczuje" type="radio" value="2" />
-                                <label for="zle">Żle</label><br />
+                                <input id="zlee" name="zleczuje" type="radio" value="2" />
+                                <label for="zlee">Żle</label><br />
                                 <input id="Chory" name="jestemchory" type="radio" value="3" />
-                                <label for="Chory">Chory</label>
+                                <label for="Chory">Chory</label><br>
+                                <input type="reset" value="Clear form"> 
                             </fieldset>
                             </form> 
                             <br><BR><Br>
-                            <a href="mailto:olestra16@edu.gdansk.pl"></a>
-                                <button>Wyślij</button>
+                                <fieldset>
+                                    <center>
+                                    <div style="background-color: #b7af71"></div>
+                                    <h2><font face="Arial">Jak radzisz sobie w szkole?</font></h2>
+                                </center>
+                                    <form>
+                                        <input id="bardzozle" name="bardzozle" type="radio" value="1" />
+                                        <label for="bardzozle">Bardzo Żle(1-2) </label><br />          
+                                        <input id="zle" name="zle" type="radio" value="2" />
+                                        <label for="zle">Żle(2-3)</label><br />
+                                        <input id="Dobrze" name="dobrze" type="radio" value="3" />
+                                        <label for="Dobrze">Dobrze(3-4)</label><br />
+                                        <input id="bardzodobrze" name="bardzodobrze" type="radio" value="4" />
+                                        <label for="bardzodobrze">Bardzo Dobrze(4-5)</label><br>
+                                        <input id="Doskonale" name="Doskonale" type="radio" value="5" />
+                                        <label for="Doskonale">Idealnie(5-6)</label>
+                                        <div class="school__subject">
+                                            <p>Jaki jest twoj ulubiony przedmiot w szkole?</p>
+                                            <select name="favouriteSubject">
+                                                <option disabled>Wybierz odpowiedź</option>
+                                                <option value="chemistry">Chemia</option>
+                                                <option value="pe">WF</option>
+                                                <option selected value="math">Matematyka</option>
+                                                <option value="english">Język angielski</option>
+                                                <option value="history">Historia</option>
+                                            </select>
+                                        </div><br>
+                                        <input type="reset" value="Clear form"> 
+                                    </fieldset>
+                                    </form>
+                                    <br><br><br>
+                                    <fieldset>
+                                        <center>
+                                        <div style="background-color: #b7af71"></div>
+                                        <h2><font face="Arial">Jakiej przeglądarki używasz?</font></h2>
+                                    </center>
+                                        <form>
+                                            <input name="chrome" type="checkbox"/>Google Chrome<br>
+                                            <input name="JavaScript" type="checkbox"/>Mozila FireFox<br>
+                                            <input name="edge" type="checkbox"/>Microsoft Edge<br>
+                                            <input type="reset" value="Clear form"><br>
+                                            <nobr>Jeśli użwywsz innej przeglądarki to podaj ją<br>wpisz przeglądarką poniżej. Maks: 
+                                                50<br>znaków</nobr>
+                                                <br><br>
+                                                <input name="inna" size="25" maxlength="50">
+                                                 </TD>
+                                                 </TR>
+                                                <TR height="200">  
+                                        </fieldset>
+                                        </form>
+                                    <br><Br><br>
+                                        <fieldset>
+                                            <center>
+                                            <div style="background-color: #b7af71"></div>
+                                            <h2><font face="Arial">Jakiego systemu operacyjnego używasz?</font></h2>
+                                        </center>
+                                            <form>
+                                                <input name="windows" type="checkbox"/>Windows(10,11)
+                                                <br>
+                                                <input name="macOS" type="checkbox"/>macOS
+                                                <br>
+                                                <input name="linux" type="checkbox"/>Linux
+                                                <br>
+                                                <input type="reset" value="Clear form">  
+                                            </fieldset>
+                                            </form>
+                                            <br><br><br>  
+                                            <fieldset>
+                                                <center>
+                                                <div style="background-color: #b7af71"></div>
+                                                <h2><font face="Arial">Jak często chodzisz do szkoly?</font></h2>
+                                            </center>
+                                                <form>
+                                                    <input id="rzadko" name="rzadko" type="radio" value="1" />
+                                                    <label for="rzadko">Rzadko </label><br />          
+                                                    <input id="odczasudoczasu" name="odczasudoczasu" type="radio" value="2" />
+                                                    <label for="odczasudoczasu">Od czasu do czasu</label><br />
+                                                    <input id="czesto" name="czesto" type="radio" value="3" />
+                                                    <label for="czesto">Często</label><br />
+                                                    <input id="codziennie" name="codziennie" type="radio" value="4" />
+                                                    <label for="codziennie">Codziennie</label><br>
+                                                    <input type="reset" value="Clear form">  
+                                                </fieldset>
+                                                </form>
+
+                            <TD><nobr><input type="reset" value="Reset" style="height:50px; width:130px"> 
+                        </TD> 
+                        <TD> <input type="submit" value="Wyślij formularz" style="height:30px; width:120px"> </TD>
+                        </TR>
 	</body>
 	</html>	
