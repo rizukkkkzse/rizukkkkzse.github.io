@@ -4,7 +4,97 @@
 				<head>
 					  <meta charset="utf-8">
 					<title>formularz-Strafun </title>
+                    <style>
+                        :root{
+                            --main-color: #b7af71
+                        }
+                        body{
+                            background-color: var(--main-color);
+                        }
+                    </style>
 				</head>
 	<body>
+		<center>
+		<a><font color="black" size="6" face="Arial">Formularz</a></font>
+		</center>
+        <fieldset>
+            <center>
+            <div style="background-color: #b7af71"></div>
+            <legend><font size="5" face="Arial">Napisz swoje dane(Imię, Nazwisko, Numer telefonu, e-mail.)</font></legend>
+        </center>
+            <form>          
+            Imie: <br>
+            <input type="text" name="Imie" value="Oleksandr">
+            <br>
+            Nazwisko: <br>
+            <input type="text" name="nazwisko" value="Strafun">
+            <br>
+            Numer telefonu: <br>
+            <input type="text" name="numer-telefonu" value="+48 794 776 680">
+            <br>
+            E-mail: <br>
+            <input type="text" name="e-mail" value=""><br>
+            <input type="reset" value="Clear form">
+            </fieldset>
+            </form>
+            <br><br><br>
+            <fieldset>
+                <center>
+                <div style="background-color: #b7af71"></div>
+                <legend><font size="5" face="Arial">Jakie masz zainteresowania lub hobby?</font></legend>
+            </center>
+                <form>          
+                Gra na komputerze:
+                <input name="gra-na-komputerze" type="checkbox"/>
+                <br>
+                Malowanie:
+                <input name="malowanie" type="checkbox"/>
+                <br>
+                Programowanie:
+                <input name="Programowanie" type="checkbox"/>
+                <br>
+                Inne:
+                <input name="inne" type="checkbox"/>
+                Napisz swoje:
+                <input name="napisz-swoje" value="" type="text"><br>
+                <input type="reset" value="Clear form">
+                </fieldset>
+                </form> 
+                <br><br><br>
+                <fieldset>
+                    <center>
+                    <div style="background-color: #b7af71"></div>
+                    <legend><font size="5" face="Arial">Jakie znasz języki programowania?</font></legend>
+                </center>
+                    <form>          
+                    Python
+                    <input name="Python" type="checkbox"/>
+                    <br>
+                    JavaScript
+                    <input name="JavaScript" type="checkbox"/>
+                    <br>
+                    C#
+                    <input name="C#" type="checkbox"/><br>
+                    <input type="reset" value="Clear form">
+                    </fieldset>
+                    </form>   
+                    <br><br><br>
+                        <fieldset>
+                            <center>
+                            <div style="background-color: #b7af71"></div>
+                            <legend><font size="5" face="Arial">Jak się czujesz?</font></legend>
+                        </center>
+                            <form>          
+                                <input id="dobrze" name="dobrzeczuje" type="radio" value="1" />
+                                <label for="dobrze">Dobrze</label><br />
+                                <input id="zle" name="zleczuje" type="radio" value="2" />
+                                <label for="zle">Żle</label><br />
+                                <input id="Chory" name="jestemchory" type="radio" value="3" />
+                                <label for="Chory">Chory</label>
+                            </fieldset>
+                            </form> 
+                            <br><BR><Br>
+                            <a href="mailto:olestra16@edu.gdansk.pl"></a>
+                                <button>Wyślij</button>
 	</body>
 	</html>	
